@@ -3,4 +3,5 @@ mkdir C:\src
 
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
-.\choco-git-install.ps1
+Write-Host "choco installed" | Out-File "C:\src\status.log"
+#.\choco-git-install.ps1
